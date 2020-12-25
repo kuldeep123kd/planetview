@@ -27,11 +27,10 @@ const Sidebar = () => {
           </div>
           <div className="homepage__sidebar__content">
             <div>
-              <h1>Employee</h1>
+              <h1>Planets</h1>
               <ul>
-                <li onClick={hideSidebar} className={(location.pathname === '/addusers' ? 'active' : '')}><Link to="/addusers">Add User</Link></li>
-                <li onClick={hideSidebar} className={(location.pathname === '/listusers' ? 'active' : '')}><Link to="/listusers">List All users</Link></li>
-                <li onClick={hideSidebar} className={(location.pathname === '/deleteusers' ? 'active' : '')}><Link to="/deleteusers">Delete user</Link></li>
+                <li onClick={hideSidebar} className={(location.pathname === '/' ? 'active' : '')}><Link to="/">All</Link></li>
+                <li onClick={hideSidebar} className={(location.pathname === '/favouriteplanets' ? 'active' : '')}><Link to="/favouriteplanets">Favorites</Link></li>
               </ul>
             </div>
           </div>

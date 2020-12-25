@@ -1,3 +1,28 @@
+.table,
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 0.875rem;
+}
+
+td {
+  img {
+    cursor: pointer;
+    width: 20px;
+  }
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 .loggedout {
   margin: 10% auto;
   text-align: center;
@@ -13,7 +38,7 @@
 }
 
 .homepage__sidebar__logo {
-  background: rgba(0,0,21,.2);
+  background: #1F262D;
 }
 
 .homepage__sidebar__content {
@@ -24,6 +49,15 @@
     color: #FFFFFF;
     font-weight: 500;
     padding: 10px 15px;
+  }
+}
+
+.homepage__maincontent__title {
+  h1 {
+    margin: 0;
+    font-size: 1.0625rem;
+    color: #FFFFFF;
+    font-weight: 500;
   }
 }
 
@@ -77,6 +111,7 @@
 .header__position {
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .homepage__maincontent {
@@ -170,6 +205,28 @@
 }
 .header__navbar__menu--btn.open .header__navbar__menu--btn__icon::after {
   transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.progress__loader {
+  text-align: center;
+  padding: 10%;
+}
+
+.homepage__maincontent__planets__table__parent {
+  padding: 20px 15px;
+  padding-top: 50px;
+  h1 {
+    margin: 0;
+    color: #000000;
+    margin: 0;
+    font-size: 1.125rem;
+    padding-bottom: 15px;
+  }
+}
+
+.homepage__maincontent__planets__table {
+  overflow-x: auto;
+  padding-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) {
